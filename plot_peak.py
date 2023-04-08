@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 
 # open and read the file
-my_file = '/Users/raphaelmauron/peak_height/data/Offline_test1_SN_7_4.txt'
+my_file = '/Users/raphaelmauron/peak_height/data/Offline_test1_SN_7_1.txt'
 
 with open(my_file, 'r') as file:
 
