@@ -2,10 +2,28 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import argrelextrema
+import os
 
+# Set the directory where you have the data file
+os.chdir('/Users/raphaelmauron/peak_height')
+
+# create output directory if not already existing
+if not os.path.exists('output'):
+    os.makedirs('output')
+else:
+    print('Path already exists.')
+
+
+# iterate through all the files found in '/data' directory
+for filename in os.listdir('data'):
+    f = os.path.join('data', filename)
+    # checking if it is a file
+    if os.path.isfile(f):
+        print(f)
 
 # open and read the file
-my_file = '/Users/raphaelmauron/peak_height/data/Offline_test1_SN_7_1.txt'
+my_file = './data/Offline_test1_SN_7_1.txt'
+
 
 with open(my_file, 'r') as file:
 
