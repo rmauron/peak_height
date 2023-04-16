@@ -7,6 +7,7 @@ All you need is to have a directory with the script "plot_peak_height.py", speci
 
 Organize your project directory in the following manner:
 
+```
 peak_height_project
 ├── README.md
 ├── data
@@ -15,11 +16,13 @@ peak_height_project
 │   ├── Offline_test1_SN_7_3.txt
 │   └── Offline_test1_SN_7_4.txt
 └── plot_peak_height.py
+```
 
 with all the data files in the data repository and the script.
 
 Once you run the script, a folder "output" is automatically generated and stores every plot with the same name as the data inputs:
 
+```
 peak_height_project
 ├── README.md
 ├── data
@@ -33,5 +36,6 @@ peak_height_project
 │   ├── Offline_test1_SN_7_3.png
 │   └── Offline_test1_SN_7_4.png
 └── plot_peak_height.py
+```
 
 At this point, the work is done.
