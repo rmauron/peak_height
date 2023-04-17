@@ -18,7 +18,7 @@ else:
 def read_plot_save(my_file):
 
     # open and read the file
-    with open(my_file, 'r') as file:
+    with open(my_file, 'r', encoding= 'unicode_escape') as file:
         # read the lines in the file, skipping the 1st row
         lines = file.readlines()[1:]
 
@@ -53,7 +53,7 @@ def read_plot_save(my_file):
 
     # mark the maxima with red dots
     for i in range(len(maxima_above_y)):
-        if i > 0 and y_values[maxima_above_y[i]] - y_values[maxima_above_y[i-1]] >= 90:
+        if i > 0 and y_values[maxima_above_y[i]] - y_values[maxima_above_y[i-1]] >= 60:
             x_r = x_values[maxima_above_y[i-1]]
             y_r = y_values[maxima_above_y[i-1]]
             x_g = x_values[maxima_above_y[i]]
