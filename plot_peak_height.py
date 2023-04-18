@@ -61,7 +61,8 @@ def read_plot_save(my_file):
             ax.plot(x_r, y_r, 'ro', markersize=5)
             ax.plot(x_g, y_g, 'go', markersize=5)
             # draw a vertical line between the red and green dots
-            ax.text(x_g, y_g-70, f"{y_g-30:.2f}", ha='center', va='top', fontsize=8)
+            ax.text(x_g, y_g-70, f"{abs(y_g-y_r):.2f}", ha='center', va='top', fontsize=8)
+
 
     # plot the data using matplotlib
     my_dest = str(my_file[re.search('data/', my_file).end():]) + ".png" #retrieve file name for saving and plot title
