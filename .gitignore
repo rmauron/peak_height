@@ -2,7 +2,7 @@
 .DS_Storedist.png
 .DS_Store.png
 .DS_Store
-/data
-/output
+/data/
+/output/
 *.csv
 *.png
