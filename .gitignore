@@ -2,7 +2,9 @@
 .DS_Storedist.png
 .DS_Store.png
 .DS_Store
-/data/
-/output/
+/data
+/output/plot_distance
+/output/plot_only
+/output/csv
 *.csv
 *.png
