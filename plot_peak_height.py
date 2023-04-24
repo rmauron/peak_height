@@ -4,6 +4,7 @@ import numpy as np
 import os
 import re
 from scipy.signal import argrelextrema
+from scipy.ndimage import gaussian_filter1d
 import csv
 
 # Set the directory to you project directory
@@ -55,11 +56,15 @@ def read_plot_save(my_file):
     x_values = np.array(x_values)
     y_values = np.array(y_values)
 
+    # smooth the y_values to avoid to rough peaks
+    y_values = gaussian_filter1d(y_values, sigma=5)
+
+
     # find local maxima above x = -500
     maxima_idx = argrelextrema(y_values, np.greater)[0]
     maxima_above_y = []
     for i in maxima_idx:
-        if y_values[i] >= -500:
+        if y_values[i] >= -2000:
             maxima_above_y.append(i)
 
     # create figure 1 (lines + red dot + green dot + distance)
@@ -140,6 +145,6 @@ for filename in os.listdir('data'):
     f = os.path.join('data', filename)
     # checking if it is a file
     if os.path.isfile(f):
-         #execute the function
+        #execute the function
         read_plot_save(f)
 print("The task is done. Find your plots and peak heights in the created output folder!")
