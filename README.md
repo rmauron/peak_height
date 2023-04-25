@@ -20,7 +20,7 @@ peak_height_project
 
 with all the data files in the data repository and the script.
 
-Once you run the script, a folder "output" is automatically generated and stores a csv repository with a csv file for peak heights of each sample in data precising the position of the peak difference on the x-axis and the corresponding peak height. Two other repositories are also created in ```output```, ```plot_distance``` that stores figures with distance printed on it and ```plot_only``` that stores the figures without annotation.
+Once you run the script, a folder ```output``` is automatically generated and stores a ```csv``` repository with a csv file for peak heights of each sample in data precising the position of the peak difference on the x-axis and the corresponding peak height. Two other repositories are also created in ```output```, ```plot_distance``` that stores figures with distance printed on it and ```plot_only``` that stores the figures without annotation.
 
 ```
 peak_height_project
