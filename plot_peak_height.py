@@ -60,7 +60,7 @@ def read_plot_save(my_file):
     y_values = gaussian_filter1d(y_values, sigma=5)
 
 
-    # find local maxima above x = -500
+    # find local maxima above x = -2000
     maxima_idx = argrelextrema(y_values, np.greater)[0]
     maxima_above_y = []
     for i in maxima_idx:
