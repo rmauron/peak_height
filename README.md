@@ -62,13 +62,13 @@ At this point, the work is done.
 This software is designed to work seamlessly with your data structure, requiring minimal parameter changes. 
 However, note that in the script ```plot_peak_height.py``` you will need to specify your working directory.
 
-* Line smoothing, line 60
+* Line smoothing, line 60 <br>
 You can change the ```sigma``` value, which is the standard deviation for Gaussian kernel. Increasing the sigma value will result in a smoother line. This might be necessary when your measurement has many oscillations that you don't want to count.
 
-* Lower limit for peak detection, line 67
+* Lower limit for peak detection, line 67 <br>
 You can change the lower limit from the y-axis from which you want to detect peak maxima. By default, it considers peaks above the threshold ```-2000```.
 
-* Minimum vertical distance for peak detection, line 94
+* Minimum vertical distance for peak detection, line 94 <br>
 You can specify the minimum vertical distance you want to consider between two consecutive maxima to count them as a significant peak. By default, the minimum vertical distance is set to ```60```.
 
 
