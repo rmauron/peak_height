@@ -5,7 +5,7 @@ As part of a fellow student's master's work, the height of peak series had to be
 Real-time detection and quantification of metabolites generated through bioproduction are a key aspect in biologics manufacturing and product purification. Through the implementation of a novel protein quantification unit, this information can be used to optimize those processes. In the context of raw data analysis given by the device, a reliable and automated solution is needed to accurately deliver this information. The software described below does exactly that, by calculating the difference in response associated with a shift in the light incidence, with each shift corresponding to a measurement. This specific change in response is necessary to associate each sample analyzed to its respective product concentration.
 
 ## Prerequisites
-All you need is to have a directory with the script "plot_peak_height.py", specify your path to the directory in line 10 of the script.
+All you need is to have a directory with the script ```plot_peak_height.py```, specify your path to the directory in line 10 of the script.
 
 Organize your project directory in the following manner:
 
