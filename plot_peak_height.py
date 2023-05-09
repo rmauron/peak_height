@@ -67,7 +67,7 @@ def read_plot_save(my_file):
         if y_values[i] >= -2000:
             maxima_above_y.append(i)
 
-    # create figure 1 (lines + red dot + green dot + distance)
+    # create figure 1 (line + red dot + green dot + distance)
     plt.figure(1)
     fig, ax = plt.subplots()
     ax.plot(x_values, y_values)
