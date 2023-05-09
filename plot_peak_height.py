@@ -102,7 +102,7 @@ def read_plot_save(my_file):
                 # calculate peak height 
                 distance = f"{abs(y_g-y_r):.2f}"
 
-                # define the exact middle between the 2 maximas for the position of the peak height on the x-axis
+                # define the exact middle between the 2 maxima for the position of the peak height on the x-axis
                 middle_g_r = f"{x_g+((x_g-x_r)/2):.2f}"
 
                 # add distance on the figure 1
