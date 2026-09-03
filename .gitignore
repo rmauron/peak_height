@@ -2,12 +2,3 @@
 .DS_Storedist.png
 .DS_Store.png
 .DS_Store
-/data
-/output/plot_distance
-/output/plot_only
-/output/csv
-*.csv
-*.png
-
-# the example figure shown in README.md
-!/output/plot_fit/Offline_test1_SN_7_3.png
